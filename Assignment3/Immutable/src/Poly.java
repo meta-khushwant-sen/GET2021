@@ -89,6 +89,9 @@ public static void main(String args[]){
 				polynomial=polynomial.multiPoly(poly3, poly4);
 				polynomial.printPoly();
 				break;
+		case 5: System.exit(0);
+		default:
+			System.out.println("\nEnter Correct choice:\n");
 		}
 	}
 }

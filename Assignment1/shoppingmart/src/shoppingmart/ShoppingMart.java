@@ -1,22 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package shoppingmart;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- *
- * 
- */
+
 public class ShoppingMart {
     private static ArrayList<Item> items= new ArrayList<>();
     private static ArrayList<Item> itemInCart= new ArrayList<>();
     static void entryToMart(){
         System.out.println("Welcome to the Shopping Mart\n Enter your Choice: \n 1. Display all elements in Mart \n 2.Display all elements present in Cart\n 3.Add an item to cart \n 4. Remove an item from the cart \n 5. Displaying the bill \n6.Exit");
-   Scanner sc= new Scanner(System.in); //System.in is a standard input stream.
+   Scanner sc= new Scanner(System.in); 
     int choice= sc.nextInt();  
     switch(choice){
         case 1: displayall(false);
@@ -132,9 +125,7 @@ public class ShoppingMart {
        System.out.println("\nTotal Amount\t\t\t\t\t\t"+totalAmount);
         entryToMart();
     }
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
    
    items.add(new Item("biscuit",5,50));

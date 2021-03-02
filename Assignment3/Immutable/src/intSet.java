@@ -74,7 +74,7 @@ public static void main(String args[]){
 	intSet s2=new intSet();
 	Scanner sc= new Scanner(System.in);
 	while(true){
-		System.out.println("\nEnter your Choice:\n1.To check isMember.\n2.Size.\n3.To check isSubset.\n4.Complement.\n5.Union.\n  ");
+		System.out.println("\nEnter your Choice:\n1.To check isMember.\n2.Size.\n3.To check isSubset.\n4.Complement.\n5.Union.\n6.Exit\n  ");
 		int choice=sc.nextInt();
 		switch(choice){
 		case 1:System.out.println("Enter the element:\n");
@@ -133,6 +133,9 @@ public static void main(String args[]){
 					System.out.println("\t"+originalSet.subset[i]+"\t");
 				}
 				break;
+		case 6:System.exit(0);
+		default: 
+			System.out.println("\nEnter the Correct Choice:");
 		}
 	}
 } 
