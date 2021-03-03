@@ -56,9 +56,9 @@ public Poly createPloy(){
 	return poly;
 }
 public void printPoly(){
-	System.out.println(arrPoly[0]);
+	System.out.print(arrPoly[0]);
 	for(int i=1;i<arrPoly.length;i++){
-		System.out.println(" + "+arrPoly[i]+"x^"+i);
+		System.out.print(" + "+arrPoly[i]+"x^"+i);
 	}
 }
 public static void main(String args[]){
