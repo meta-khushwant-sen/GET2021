@@ -16,6 +16,16 @@ public class LinkedList {
 
 		
 	}
+	/**
+	 * Rotates the sublist of a list
+	 * @param head represents the head of the list
+	 * @param subStart represents start of the sublist
+	 * @param subEnd represents end of the sublist
+	 * @param subListStart represents start of the sublist after rotation
+	 * @param endAfterRot represents end of the subList after rotation
+	 * @param preSubList represents the node just before the subList Starts
+	 * @param numOfRotation
+	 */
 	private  void rotateList(Node head,int subStart,int subEnd,int numOfRotation){
 		int sizeSubList=subEnd-subStart+1;
 		if(numOfRotation>sizeSubList){
@@ -60,6 +70,10 @@ public class LinkedList {
 		}
 		
 	}
+	/**
+	 * prints the node of the list
+	 * @param head represents head of the list
+	 */
 	private  void print (Node head){
 		Node temp=head;
 		while(temp!=null){
@@ -68,6 +82,10 @@ public class LinkedList {
 		}
 		System.out.println("\n");
 	}
+	/**
+	 * detects loop in the list
+	 * @param head represents head of the list
+	 */
 	private void detectLoop(Node head){
 		Node slowPointer=head;
 		Node fastPointer=head;
@@ -93,7 +111,7 @@ public class LinkedList {
 			head=ll.insertNode(head,90);
 			ll.print(head); 
 			ll.rotateList(head,2,5,1);
-			//head.next.next.next.next.next=head.next;
-			 //ll.detectLoop(head);
+			head.next.next.next.next.next=head.next;
+			ll.detectLoop(head);
 	}
 }

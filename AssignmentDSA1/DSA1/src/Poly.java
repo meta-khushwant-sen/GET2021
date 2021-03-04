@@ -8,6 +8,14 @@ public class Poly {
 		Node next;
 		
 	}
+	/**
+	 * insert a node to the list
+	 * @param head represents head of the list
+	 * @param coeff represents coefficient of the variables
+	 * @param x represents x-variable
+	 * @param y represents y-variable
+	 * @return new head of the list
+	 */
 	Node insertNode(Node head,int coeff ,int x,int y){
 		Node newNode= new Node();
 		newNode.coeff=coeff;
@@ -20,7 +28,12 @@ public class Poly {
 
 		
 	}
-	private  int print (Node head){
+	/**
+	 * calculates the degree of the polynomial
+	 * @param head represents head of the list
+	 * @return degree of the polynomial
+	 */
+	private  int degree (Node head){
 		Node temp=head;
 		int count=0;
 		int degree;
@@ -46,7 +59,7 @@ public class Poly {
 		head=obj.insertNode(head,3,4,2);//coefficient for degree 3
 		head=obj.insertNode(head,1,2,5);
 		head=obj.insertNode(head,4,0,0);
-		System.out.println("\nDegree of above expression: "+obj.print(head));
+		System.out.println("\nDegree of above expression: "+obj.degree(head));
 		
 	}
 }
