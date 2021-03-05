@@ -42,10 +42,10 @@ private String capsUncaps(){
 	int len=str1.length();
 	String newStr="";
 	for(int i=0;i<len;i++){
-		if(str1.charAt(i)>'a' && str1.charAt(i)<'z'){
+		if(str1.charAt(i)>='a' && str1.charAt(i)<='z'){
 			newStr+=(char)(str1.charAt(i)-diffAsciiUpperToLower);
 		}
-		if(str1.charAt(i)>'A' && str1.charAt(i)<'Z'){
+		if(str1.charAt(i)>='A' && str1.charAt(i)<='Z'){
 			newStr+=(char)(str1.charAt(i)+diffAsciiUpperToLower)
 					;
 		}
