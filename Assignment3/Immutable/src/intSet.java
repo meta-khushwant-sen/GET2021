@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Scanner;
 
 
@@ -29,12 +31,18 @@ public int size(boolean isSet){
 return subset.length;	
 }
 public boolean isSubSet(intSet s){
-	Arrays.sort(set);
-	Arrays.sort(s.subset);
-	//System.out.println("\nsubsetsize:"+s.size(false)+"\n");
-	for(int i=0;i<s.size(false);i++){
-		int index=Arrays.binarySearch(set,s.subset[i]);
-		if(index==-1){
+	int len1=set.length;
+	int len2=s.subset.length;
+	if(len2>len1){
+		return false;
+	}
+	HashSet<Integer> hs =new HashSet<Integer>();
+	for(int i=0;i<len1;i++){
+		hs.add(set[i]);
+	}
+	for(int i=0;i<len2;i++){
+		System.out.println(s.subset[i]);
+		if(!hs.contains(s.subset[i])){
 			return false;
 		}
 	}
@@ -60,11 +68,21 @@ public intSet getComplement(){
 }
 public intSet union(intSet s1,intSet s2){
 	intSet newObject=new intSet();
-	Arrays.sort(s1.subset);
-	Arrays.sort(s2.subset);
-	newObject.subset=new int[s1.subset.length+s2.subset.length];
-	System.arraycopy(s1.subset,0,newObject.subset,0,s1.subset.length);
-	System.arraycopy(s2.subset,0,newObject.subset,s1.subset.length,s2.subset.length);
+	HashSet<Integer>hSet = new HashSet<>();
+	for(int i=0;i<s1.subset.length;i++){
+		hSet.add(s1.subset[i]);
+	}
+	for(int i=0;i<s2.subset.length;i++){
+		hSet.add(s2.subset[i]);
+	}
+	Iterator<Integer> iterator=hSet.iterator();
+	int i=0;
+	newObject.subset= new int[hSet.size()];
+	while(iterator.hasNext()){
+		newObject.subset[i]=iterator.next();
+				i++;
+	}
+	
 	return newObject;
 	
 }
@@ -87,15 +105,10 @@ public static void main(String args[]){
 				int size=sc.nextInt();
 				s1.subset=new int[size];
 				System.out.println("\n.Enter the elements of the subset\n");
-				int iterator=0;
-				while(iterator<size){
-					int value=sc.nextInt();
-					boolean check=s1.isMember(value,false);
-					if(!check){
-					s1.subset[iterator]=value;
-					iterator++;
-					}
+				for(int i=0;i<size;i++){
+					s1.subset[i]=sc.nextInt();
 				}
+				
 				System.out.println(originalSet.isSubSet(s1));
 				break;
 		case 4:originalSet=originalSet.getComplement();
@@ -103,30 +116,18 @@ public static void main(String args[]){
 					System.out.println("\t"+originalSet.compliment[j]+"\t");
 				}
 				break;
-		case 5:System.out.println("\n.Enter the size of both the subset\n");
+		case 5:System.out.println("\nEnter the size of both the subset\n");
 				int size1=sc.nextInt();
 				int size2=sc.nextInt();
 				s1.subset=new int[size1];
 				s2.subset=new int[size2];
-				System.out.println("\n.Enter the elements of the subset1\n");
-				iterator=0;
-				while(iterator<size1){
-					int value=sc.nextInt();
-					boolean check=s1.isMember(value,false);
-					if(!check){
-					s1.subset[iterator]=value;
-					iterator++;
-					}
+				System.out.println("\nEnter the elements of the subset1\n");
+				for(int i=0;i<size1;i++){
+					s1.subset[i]=sc.nextInt();
 				}
-				System.out.println("\n.Enter the elements of the subset2\n");
-				iterator=0;
-				while(iterator<size2){
-					int value=sc.nextInt();
-					boolean check=s2.isMember(value,false);
-					if(!check){
-					s2.subset[iterator]=value;
-					iterator++;
-					}
+				System.out.println("\nEnter the elements of the subset2\n");
+				for(int i=0;i<size2;i++){
+					s2.subset[i]=sc.nextInt();
 				}
 				originalSet=originalSet.union(s1, s2);
 				for(int i=0;i<originalSet.subset.length;i++){
