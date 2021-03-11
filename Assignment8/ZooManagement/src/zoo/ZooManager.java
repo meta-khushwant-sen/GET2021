@@ -11,6 +11,7 @@ public class ZooManager {
  static boolean isCage=false;
  String animalcat;
  String animalTyp;
+ static boolean isZoneEmpty=true;
  /**
   * Find and prints the zone available for the animal Category
   */
@@ -37,10 +38,17 @@ public class ZooManager {
 	 System.out.println("Available Cages");
 	 for(Cage obj1:obj.cages){
 			if(obj1.animalType.equalsIgnoreCase(animalTyp)){
+				if(obj1.capacity>0){
+					isZoneEmpty=false;
+				}
 				isCage=true;
 				System.out.println(obj1.cageName+" with Capacity "+obj1.capacity);
 			}
 		}
+	 if(isZoneEmpty){
+		 obj.addCage(animalTyp,obj.animalCategory);
+		 availableCage(obj);
+	 }
  }
  /**
   * Searches a particular cage in the zone
@@ -78,13 +86,12 @@ public class ZooManager {
 		 System.out.println("No such zone Exists");
 		 return;
 	 }
-	 System.out.println("Enter animal Type and then Capacity");
+	 System.out.println("Enter animal Type");
 		animalTyp=sc.next();
 		animalTyp.replaceAll(" ","");
-		int capacity=sc.nextInt();
-	 int res=obj.addCage(animalTyp, capacity,obj.animalCategory.toLowerCase());
+	 int res=obj.addCage(animalTyp,obj.animalCategory.toLowerCase());
 		if(res==1){
-			System.out.println("Cage for "+animalTyp+" with capacity of "+capacity+" added to "+obj.zoneName);
+			System.out.println("Cage for "+animalTyp+" added to "+obj.zoneName);
 			obj.numOfCages++;
 			return;
 		}else{
@@ -126,9 +133,9 @@ public static void main(String args[]){
 	ZooManager zooObj= new ZooManager();
 	String zoneName;
 	Zone zone1=new Zone("zone1",4,"Mammal",true,true);
-	zone1.addCage("Lion",5,"mammal");
+	zone1.addCage("Lion","mammal");
 	Zone zone2=new Zone("zone3",10,"Reptile",true,true);
-	zone1.addCage("Crocodile",2,"reptile");
+	zone1.addCage("Crocodile","reptile");
 	Zone zone3=new Zone("zone4",4,"Mammal",true,true);
 	Zone zone4=new Zone("zone5",10,"Reptile",true,true);
 	Zone zone5=new Zone("zone6",10,"Birds",true,true);

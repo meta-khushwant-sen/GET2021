@@ -9,11 +9,11 @@ public class Cage {
 public String cageName;
 public String animalType;
 public int capacity;
-Cage(String animalType,int capacity){
+Cage(String animalType){
 	count++;
 	this.cageName="cage"+count;
 	this.animalType=animalType;
-	this.capacity=capacity;
+	this.capacity=2;
 }
 /**
  * method add animals to the Cage

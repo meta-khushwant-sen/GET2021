@@ -27,24 +27,24 @@ Zone(String zoneName,int num,String aniType,boolean park,boolean canteen){
  * @param animalCat represents category of the animal
  * @return 1 for success and 0 for failure
  */
-int addCage(String animalType,int capacity,String animalCat){
+int addCage(String animalType,String animalCat){
 	if(animalCat.equalsIgnoreCase("mammal")){
 	if(Arrays.asList(mammal).contains(animalType.toLowerCase())){
-		Cage cage=new Cage(animalType,capacity);
+		Cage cage=new Cage(animalType);
 		cages.add(cage);
 		return 1;
 		} 
 	}
 	if(animalCat.equalsIgnoreCase("reptile")){
 		if(Arrays.asList(reptile).contains(animalType.toLowerCase())){
-			Cage cage=new Cage(animalType,capacity);
+			Cage cage=new Cage(animalType);
 			cages.add(cage);
 			return 1;
 			} 
 		}
 	if(animalCat.equalsIgnoreCase("birds")){
 		if(Arrays.asList(birds).contains(animalType.toLowerCase())){
-			Cage cage=new Cage(animalType,capacity);
+			Cage cage=new Cage(animalType);
 			cages.add(cage);
 			return 1;
 			} 
