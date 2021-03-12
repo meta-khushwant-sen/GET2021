@@ -1,0 +1,29 @@
+Assignment 1-
+Ques1:
+	Entities:
+		Admin
+		Users
+		Products
+		Categories
+		Inventory
+		Orders
+
+
+Ques2:
+	Relations:
+		Table1: Admin(name,adminId,email,number)
+		Table2: Users(name,userId,email,number,ADDRESS)
+		Table3: Products(PRODUCTID,name,CATEGORYID,price,IMAGES,availablity_status)
+		Table4: Category(categoryID,categoryName,parentCategory)
+		Table5: Stock(itemCode,name,quantity)
+		Table6: Orders(orderId,date,userId,price,status,PRODUCTID)
+
+Ques3:
+	Key attributes:
+		Table1: adminId
+		Table2: userID
+		Table3: ProductId
+		Table4: categoryId
+		Table5: itemCode
+		Table6: orderId
+		
