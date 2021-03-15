@@ -1,7 +1,7 @@
-
-
+import java.util.Scanner;
 
 public class Sparse {
+	public static Scanner sc=new Scanner(System.in);
 	private final int mat[][];
 	private final int row,col;
 	private final int length;
@@ -154,27 +154,57 @@ public class Sparse {
 			System.out.println(mat[i][0]+"\t"+mat[i][1]+"\t"+mat[i][2]);
 		}
 	}
-	public static void main(String args[]){
-		int r1[]={1,1,3,4,4};
-		int c1[]={2,4,3,1,2};
-		int val1[]={10,12,5,15,12};
-		int r2[]={1,2,3,4,4};
-		int c2[]={3,4,3,1,2};
-		int val2[]={8,23,9,20,25};
-		Sparse s1=new Sparse(4,4,r1,c1,val1);
-		Sparse s2=new Sparse(4,4,r2,c2,val2);
-		Sparse s3=s1.add(s2);
-		Sparse s4=s1.multiply(s2);
-		Sparse s5=s1.transpose();
-		s1.print();
-		s2.print();
-		System.out.println("Addition");
-		s3.print();
-		System.out.println("Multiplication");
-		s4.print();
-		System.out.println("Transpose");
-		s5.print();
-		System.out.println("Symmetric "+s1.symmetric(s1));
+	public static int[] takeInput(int size){
+		int[] array=new int[size];
+		for(int i=0;i<size;i++){
+			array[i]=sc.nextInt();
+		}
+		return array;
+	}
+	public static Sparse input(int dimen){
+		System.out.println("Enter the number of rows and col having values");
+		int size2=sc.nextInt();
+		System.out.println("Enter row number having values");
+		int[] r2=new int[size2];
+		r2=takeInput(size2);
+		System.out.println("Enter col number having values");
+		int[] c2=new int[size2];
+		c2=takeInput(size2);
+		System.out.println("Enter the values");
+		int[] val2=new int[size2];
+		val2=takeInput(size2);
+		Sparse s1=new Sparse(dimen,dimen,r2,c2,val2);
+		return s1;
+	}
+public static void main(String args[]){
+		
+		System.out.println("Enter the dimensions of the matrix:");
+		int dimen=sc.nextInt();
+		while(true){
+			System.out.println("Enter your choice:\n1.add\n2.multiply\n3.transpose\n4.isSymmetric\n5.exit");
+			int choice=sc.nextInt();
+			switch(choice){
+			case 1: Sparse s1=input(dimen);
+					Sparse s2=input(dimen);
+					Sparse s5=s1.add(s2);
+					s5.print();
+					break;
+			case 2: Sparse s3=input(dimen);
+					Sparse s4=input(dimen);
+					Sparse s6=s3.multiply(s4);
+					s6.print();
+					break;
+			case 3: Sparse s7=input(dimen);
+					Sparse s8=s7.transpose();
+					s8.print();
+					break;
+			case 4: Sparse s9=input(dimen);
+					System.out.println("Symmetricity  "+s9.symmetric(s9));
+					break;
+			}
+		}
+		
+		
 	}
 	
 }
