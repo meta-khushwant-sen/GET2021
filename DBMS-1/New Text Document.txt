@@ -26,4 +26,39 @@ Ques3:
 		Table4: categoryId
 		Table5: itemCode
 		Table6: orderId
+
+
+
+Assignement 2:
+Normailzation: Normalization is database technique that reduces data redundancy and eliminates undesirable characterstics like insertion, update and deletion anamolies.
+ Normalization rules divides larger tables into smaller tables and links them using relationships.
+
+First Normal form(1NF):
+In this form an attribute of a table cannot hold multiple values.
+Example:
+  empId		empName		empNum
+     1		khush		1234567890
+     2		abhay		1112233323
+				1203814034
+     3		ajay		9347238344
+
+converitng it into 1NF
+
+  empId		empName		empNum
+     1		khush		1234567890
+     2		abhay		1112233323
+     2	        abhay		1203814034
+     3		ajay		9347238344
+
+
+Second Normal Form(2NF):
+2NF holds for two condition:
+	Table should be in 1NF
+	No prime attribute(attribute not part of candidate key) is dependent on the proper subset of any candidate key of the table
+
+Example:
+
+
+
+
 		
