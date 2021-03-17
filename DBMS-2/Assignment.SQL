@@ -110,7 +110,7 @@ INSERT INTO Orders(userId,productId,Date,status,totalCost) VALUES (3,2,'2021-03-
 INSERT INTO Orders(userId,productId,Date,status,totalCost) VALUES (5,2,'2021-02-01','not shipped',3000);
 
 
-select p1.productId,p1.name,p2.category,p1.price from Products p1 INNER JOIN ProductCat p2 ON p1.productId=p2.productId where p1.status='In Stock' order by p1.Date desc;
+select p1.productId,p1.status,p1.name,p2.category,p1.price from Products p1 INNER JOIN ProductCat p2 ON p1.productId=p2.productId where p1.status='In Stock' order by p1.Date desc;
 
 select p1.name from products p1 inner join productimages p2 on p1.productId=p2.productId and p2.images is null;
 
