@@ -2,7 +2,7 @@
 DELIMITER //
 CREATE FUNCTION getOrders(d DATE) RETURNS int DETERMINISTIC
 BEGIN
-return (select count(orderId) from orders where month(DATE)=month(d) and year(DATE)=year(d) group by DATE);
+return (select count(orderId) from orders where month(DATE)=month(d) and year(DATE)=year(d));
 END;//
 select getOrders(CURDATE());
 
@@ -14,18 +14,18 @@ BEGIN
 	select avg(totalCost),productId from orders where month(DATE)=month(d) and year(DATE)=year(d) group by productId;
 END;//
 
-CALL averageSale(CURRDATE());//
+CALL averageSale(CURDATE());//
 
 
 3.
-delimeter //
-CREATE PROCEDURE getOrderDetails(d1 DATE.d2 DATE)
+delimiter //
+CREATE PROCEDURE getOrderDetails(d1 DATE,d2 DATE)
 BEGIN
 	if(d2<=d1)
 	then
 	set d1=date_format(d1,'%y-%m-01');
 	end if;
-	select orderId,status  from where DATE between d1 and d2;
+	select orderId,status,date  from orders where Date between d1 and d2;
 END;//
 
 CALL getOrderDetails('2021-02-05','2021-03-16');//
@@ -49,5 +49,5 @@ BEGIN
 return (select Month(Date) from orders where year(DATE)=year(d) group by DATE order by count(orderId) desc limit 1);
 END;//
 
-select getMonth(CURRDATE());
+select getMonths(CURDATE());
 

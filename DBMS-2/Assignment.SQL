@@ -108,6 +108,9 @@ INSERT INTO Orders(userId,productId,Date,status,totalCost) VALUES (4,6,NOW(),'no
 INSERT INTO Orders(userId,productId,Date,status,totalCost) VALUES (3,2,NOW(),'not shipped',5000);
 INSERT INTO Orders(userId,productId,Date,status,totalCost) VALUES (3,2,'2021-03-01','not shipped',3000);
 INSERT INTO Orders(userId,productId,Date,status,totalCost) VALUES (5,2,'2021-02-01','not shipped',3000);
+INSERT INTO Orders(userId,productId,Date,status,totalCost) VALUES (1,3,NOW(),'Cancelled',5000);
+INSERT INTO Orders(userId,productId,Date,status,totalCost) VALUES (3,7,'2021-03-11','Cancelled',3000);
+INSERT INTO Orders(userId,productId,Date,status,totalCost) VALUES (1,5,'2021-02-01','Cancelled',3000);
 
 
 select p1.productId,p1.status,p1.name,p2.category,p1.price from Products p1 INNER JOIN ProductCat p2 ON p1.productId=p2.productId where p1.status='In Stock' order by p1.Date desc;
