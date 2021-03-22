@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meta Parking</title>
+</head>
+<body>
+	<nav class="headNavigation">
+	<a href="#addVehicle">Add Vehicle</a>
+	<a href="#addEmployee">Add Employee</a>
+	<a href="#feedBack">FeedBack</a>
+	<a href="#pricing">Pricing</a>
+	</nav>
+	<header class="pageHeader">
+		<h1>Welcome to Parking</h1>
+	</header>
+<main>
+	<section class="section" id="addEmployee">
+		<span>
+			<img src="" alt="Employees Image">
+		</span>
+		<span>
+			<form>
+				<h2 class="headingRegion">Add Employee</h2>
+				<br>
+				<label for="empName">Full Name</label>
+				<input type="text" id="empName" placeholder="Your Name">
+				<br>
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Male</label><br>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label><br>
+				<input type="radio" id="other" name="gender" value="other">
+				<label for="other">Other</label><br><br>
+				<label for="empEmail">Email</label>
+				<input type="email" id="empEmail" placeholder="Email"><br>
+				<label for="empPassword">Password</label>
+				<input type="password" id="empPass" placeholder="Enter Password"><br>
+				<label for="empCPassword">Confirm Password</label>
+				<input type="password" id="empCPass" placeholder="Confirm Password"><br>
+				<label for="empNumber">Phone Number</label>
+				<input type="tel" id="empNum" placeholder="Enter Contact Number"><br>
+				<input type="submit" value="Add Employee"><br>
+			</form>
+		</span>
+	</section>
+	<div class="split_line"></div>
+	<section class="section" id="addVehicle">
+		<span>
+			<img src="" alt="Vehicle Image">
+		</span>
+		<span>
+			<form>
+				<h2 class="headingRegion">Add Vehicle</h2><br>
+				<input type="text" id="vehicleBrand" placeholder="Vehicle Company"><br>
+				<input type="text" id="vehicleModel" placeholder="Vehicle Model"><br>
+				<input type="text" id="vehicleType" placeholder="Vehicle Type"><br>
+				<input type="text" id="vehicleNumber" placeholder="Vehicle Number"><br>
+				<input type="text" id="vEmpId" placeholde="EmployeeID"><br>
+				<textarea name="message" rows="3" cols="30" placeholder="Vehicle Indentification details"></textarea>
+				<br>
+				<input type="submit" value="Add Vehicle"><br>
+			</form>
+		</span>
+	</section>
+</body>
+</html>
+				
+				
+				
+				
