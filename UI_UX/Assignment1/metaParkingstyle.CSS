@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Gill Sans';
+}
+
+main{
+	justify-content: center;
+}
+
+.headNavigation{
+	background-color: black;
+	display: block;
+	height: 50px;
+	text-align: stretch;
+}
+a.headNavigation{
+	color: white;
+}
+.pricing{
+	display:flex;
+}
+
