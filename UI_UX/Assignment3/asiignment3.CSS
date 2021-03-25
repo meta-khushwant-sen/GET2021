@@ -1,0 +1,60 @@
+#image{
+	background: url("D:\Assignments\UI_UX\Assignment3\images\homebg.png")no-repeat fixed center center !important;
+	background-size: cover;
+}
+.topnav{
+	overflow:hidden;
+	back-color:blue;
+}
+.topnav a{
+	float:center;
+	color:white;
+	text-align:center;
+	padding:14px 16px;
+	font-size:20px;
+	text-decoration: none;
+}
+.column{
+	float:left;
+	width:33%;
+	text-align:center;
+	color:black;
+	
+}
+.column3{
+	float:left;
+	width:33.33%;
+	text-align:center;
+	color:black;
+	
+}
+.row:after{
+	clear:both;
+}
+.center{
+	margin:auto;
+	width:60%;
+}
+.column1{
+	float:left;
+	width: 50%;
+	text-align: center;
+	color:black;
+	height:100%;
+}
+.column2{
+	float:left;
+	width: 50%;
+	text-align: center;
+	color:black;
+	height:100%;
+}
+p{
+	text-align:center;
+}
+button{
+	padding:12px 20px;
+	margin: 8px 0;
+	color:white;
+}
+
