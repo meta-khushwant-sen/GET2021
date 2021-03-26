@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="bootstrap/js/custom.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body style="height: 100%;">
+    <div class="container-fluid px-0">
+        <div class="row">
+            <div class="col-2 px-0" style="height: 100%;">
+                <div style="font-weight: bold; font-size: large;" class="w-100 my-4 d-flex justify-content-center" >ANNEX</div>
+                <div style="overflow-y: scroll; height: 89vh ;" class="pl-2" >
+                    <div class="ml-3" style="color: gray;">Main</div> 
+                    <div class="ml-4 py-3 pr-3 d-flex">Dashboard <span class="ml-auto" style="border-radius: 4px; padding : 0px 4px; color: white; background-color: blue; " >8</span></div>
+                    
+                    <div onclick="myFunction()" class="ml-4 py-3 pr-3 d-flex ">Advanced UI <span class="ml-auto">></span> </div>
+                    
+                    <div id="myDIV" >
+                        <div class="ml-5 py-3 pr-3 d-flex ">Highlight </div>
+                        <div class="ml-5 py-3 pr-3 d-flex">Rating</div>     
+                        <div class="ml-5 py-3 pr-3 d-flex">Alertify </div>
+                        <div class="ml-5 py-3 pr-3 d-flex">Range Slider</div>   
+                    </div>
+                    <div class="ml-4 py-3 pr-3 d-flex ">Calender</div>
+
+                    <div class="ml-3 py-3" style="color: gray;">Components</div> 
+                    <div onclick="myFunction1()" class="ml-4 py-3 pr-3 d-flex">UI Elements <span class="ml-auto">></span></div>
+					    <div id="myDIV1" >
+                           <div class="ml-5 py-3 pr-3 d-flex ">Buttons </div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Cards</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex">Tabs &amp; Accordions</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Modals</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex">Images</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex">Alerts</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Progress Bar</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex">Lightbox</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex">Nav</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex">Pagination</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex">Popups &amp; Tooltips</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex">Badge</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex">Carousel</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Video</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex">Typography</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex">Sweet-Alert</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex">Grid</div> 						   
+                      </div>
+                    <div onclick="myFunction2()" class="ml-4 py-3 pr-3 d-flex">Forms <span class="ml-auto" style="border-radius: 4px; padding : 0px 4px; color: white; background-color: blue; " >8</span></div>      
+                     <div id="myDIV2" >
+                           <div class="ml-5 py-3 pr-3 d-flex ">Form Elements </div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Form Validation</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex">Form Advanced</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Form Editors</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex">Form File Upload</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex">Form Mask</div>
+					  </div>
+					<div onclick="myFunction3()" class="ml-4 py-3 pr-3 d-flex">Charts <span class="ml-auto">></span></div> 
+					 <div id="myDIV3" >
+                           <div class="ml-5 py-3 pr-3 d-flex ">Morris Chart </div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Chartist Chart</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex">Chartjs Chart</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Float Chart</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex">C3 Chart</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex">JQuery Knob Chart</div>
+					  </div>
+                    <div onclick="myFunction4()" class="ml-4 py-3 pr-3 d-flex">Icons <span class="ml-auto">></span></div> 
+                      <div id="myDIV4" >
+                           <div class="ml-5 py-3 pr-3 d-flex ">Material Design</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Ion Icon</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex">Font Awesome</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Themify Icon</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex">Dripicons</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex">Typicons Icons</div>
+					  </div>					
+                    <div onclick="myFunction5()" class="ml-4 py-3 pr-3 d-flex">Tables <span class="ml-auto">></span></div> 
+					<div id="myDIV5" >
+                           <div class="ml-5 py-3 pr-3 d-flex ">Basic Table</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Data Table</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex">Responsive Table</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Editable Table</div> 
+					  </div>
+                    <div class="ml-3 py-3" style="color: gray;">Extra</div> 
+                    <div onclick="myFunction6()" class="ml-4 py-3 pr-3 d-flex">Maps<span class="ml-auto" style="border-radius: 4px; padding : 0px 4px; color: white; background-color: red;" >2</span></div>
+                       <div id="myDIV6" >
+                           <div class="ml-5 py-3 pr-3 d-flex ">Google Map</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Vector Map</div>     
+					  </div>
+					<div onclick="myFunction7()" class="ml-4 py-3 pr-3 d-flex">Pages <span class="ml-auto">></span></div> 
+                     <div id="myDIV7" >
+                           <div class="ml-5 py-3 pr-3 d-flex ">Login</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Register</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex">Recover Password</div>
+                           <div class="ml-5 py-3 pr-3 d-flex">Lock Screen</div> 
+						   <div class="ml-5 py-3 pr-3 d-flex">Blank Page</div> 
+						   <div class="ml-5 py-3 pr-3 d-flex">Error 404</div> 
+						   <div class="ml-5 py-3 pr-3 d-flex">Error 500</div> 
+					  </div>					
+                </div>   
+            </div>
+            <div class="col-10 px-0">
+                <nav class="navbar navbar-dark bg-primary d-flex">
+                    <form class="form-inline">
+                        <input style="border: 1px solid #6d7beb;
+                        font-size: 13px;
+                        height: 34px;
+                        color: #ffffff;
+                        padding-left: 20px;
+                        padding-right: 40px;
+                        background: #6d7beb;
+                        border-radius: 30px;
+                        width: 200px;" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button style="border : 2px solid white; color: white; border-radius: 4px;" class="btn  my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <div class="ml-auto" style="color: white;">
+                       
+
+                       <span class="dropdown">
+                        <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-2">English</span> 
+                            <span class="mr-2">USA</span> 
+                        </a>
+                      
+                        <span class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">French</a>
+                          <a class="dropdown-item" href="#">Spanish</a>
+                          <a class="dropdown-item" href="#">Russian</a>
+                        </span>
+                      </div>
+                      <span>
+					    <div class="dropdown show">
+                         <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Messages
+                         </a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+                            <div class="dropdown-item noti-title">
+                               <h5><span class="badge badge-danger float-right">745</span>Messages</h5>
+                            </div>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <p class="notify-details"><b>Charles M. Jones</b>
+                            <small class="text-muted">Dummy text of the printing and typesetting industry.</small></p></a>
+ 
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <p class="notify-details"><b>Thomas J. Mimms</b>
+                            <small class="text-muted">You have 87 unread messages</small></p></a>
+ 
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+							<p class="notify-details"><b>Luis M. Konrad</b>
+                            <small class="text-muted">It is a long established fact that a reader will</small>
+                            </p></a>
+ 
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">View All</a>
+                        </div>
+                       </div>
+					  </span>
+					  <span>
+					    <div class="dropdown show">
+                         <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Notification
+                         </a>
+					   <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
+                       <!-- item-->
+                          <div class="dropdown-item noti-title"><h5><span class="badge badge-danger float-right">87</span>Notification</h5></div>
+                       <!-- item-->
+                          <a href="javascript:void(0);" class="dropdown-item notify-item">
+						  <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i>
+                          </div>
+                          <p class="notify-details"><b>Your order is placed</b>
+                          <small class="text-muted">Dummy text of the printing and typesetting industry.</small>
+                          </p></a>
+                      <!-- item--> 
+                          <a href="javascript:void(0);" class="dropdown-item notify-item">
+                          <div class="notify-icon bg-success"><i class="mdi mdi-message"></i>
+                          </div>
+                          <p class="notify-details"><b>New Message received</b>
+                          <small class="text-muted">You have 87 unread messages</small>
+                          </p></a>
+                      <!-- item--> 
+                          <a href="javascript:void(0);" class="dropdown-item notify-item">
+                          <div class="notify-icon bg-warning"><i class="mdi mdi-martini"></i>
+                          </div>
+                          <p class="notify-details"><b>Your item is shipped</b>
+                          <small class="text-muted">It is a long established fact that a reader will</small>
+						  </p></a>
+                      <!-- All--> 
+                          <a href="javascript:void(0);" class="dropdown-item notify-item">View All</a>
+                        </div>
+                       </div>
+					  </span>
+                      <span>
+					    <div class="dropdown show">
+                         <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          AC
+                         </a>
+						 <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+                        <!-- item-->
+                           <div class="dropdown-item noti-title"><h5>Welcome</h5>
+                           </div>
+                           <a class="dropdown-item" href="#">
+                           <i class="mdi mdi-account-circle m-r-5 text-muted"></i> Profile</a> 
+                           <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5 text-muted"></i> My Wallet</a>
+                           <a class="dropdown-item" href="#"><span class="badge badge-success float-right">5</span>
+                           <i class="mdi mdi-settings m-r-5 text-muted"></i> Settings</a>
+                           <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5 text-muted"></i> Lock screen</a>
+                           <div class="dropdown-divider">
+						   </div>
+						   <a class="dropdown-item" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                        </div>
+						</div>
+					  </span>
+                       <!--<span class="mr-2">MESSAGES</span> 
+                       <span style="border: 2px solid white; border-radius: 50%; padding : 10px" class="mr-2">AC</span> -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

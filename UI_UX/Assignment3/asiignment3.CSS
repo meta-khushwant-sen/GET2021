@@ -1,6 +1,5 @@
-#image{
-	background: url("D:\Assignments\UI_UX\Assignment3\images\homebg.png")no-repeat fixed center center !important;
-	background-size: cover;
+.background2{
+		background-image: url("D:\Assignments\UI_UX\Assignment3\images\homebg.png");
 }
 .topnav{
 	overflow:hidden;

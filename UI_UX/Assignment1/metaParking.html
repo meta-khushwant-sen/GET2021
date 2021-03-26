@@ -2,23 +2,24 @@
 <html>
 <head>
 	<title>Meta Parking</title>
-
+	
 </head>
 <body>
 	<nav class="headNavigation">
 	<a href="#addVehicle">Add Vehicle</a>
 	<a href="#addEmployee">Add Employee</a>
-	<a href="#feedBack">FeedBack</a>
-	<a href="#pricing">Pricing</a>
+	<a href="#feedback">FeedBack</a>
+	<a href="#pricingBlock">Pricing</a>
 	</nav>
 	<header class="pageHeader">
 		<h1>Welcome to Parking</h1>
 	</header>
 <main>
-	<section class="section" id="addEmployee">
-		<span>
-			<img src="" alt="Employees Image">
+	<div class="container" id="addEmployee">
+		<span >
+			<img src="C:\Users\khushwant.sen_metacu\Downloads\emp.jpeg" alt="Employees Image"> 
 		</span>
+		
 		<span>
 			<form>
 				<h2 class="headingRegion">Add Employee</h2>
@@ -42,13 +43,15 @@
 				<input type="tel" id="empNum" placeholder="Enter Contact Number"><br>
 				<input type="submit" value="Add Employee"><br>
 			</form>
+			
 		</span>
-	</section>
-	<div class="split_line"></div>
-	<section class="section" id="addVehicle">
+	<div class="split_line" style="margin-top:10px;"></div>
+	</div>
+	<div class="container" id="addVehicle">
 		<span>
-			<img src="" alt="Vehicle Image">
+			<img src="C:\Users\khushwant.sen_metacu\Downloads\vehicle.jpeg" alt="Vehicle Image">
 		</span>
+		
 		<span>
 			<form>
 				<h2 class="headingRegion">Add Vehicle</h2><br>
@@ -61,16 +64,18 @@
 				<br>
 				<input type="submit" value="Add Vehicle"><br>
 			</form>
+			
 		</span>
-	</section>
-	<div class="split_line"></div>
-	<section class="section" id="feedback">
+	<div class="split_line" style="margin-top:10px;"></div>
+	</div>
+	<div class="container" id="feedback">
 		<span>
-			<img src="" alt="Feedack Image">
+			<img src="C:\Users\khushwant.sen_metacu\Downloads\feed.png" alt="Feedack Image">
 		</span>
+		
 		<span>
 			<form>
-				<h2 class="headingRegion">Add Vehicle</h2><br>
+				<h2 class="headingRegion">Give FeedBack</h2><br>
 				<input type="text" id="fempName" placeholder="Your Name"><br>
 				<input type="text" id="fempEmail" placeholder="Your Email"><br>
 				<input type="text" id="feedSubject" placeholder="Subject"><br>
@@ -78,10 +83,12 @@
 				<br>
 				<input type="submit" value="Submit Feedback"><br>
 			</form>
+			
 		</span>
-	</section>
-</main>
-	<div class="split_line"></div>
+	<div class="split_line" style="margin-top:10px;"></div>
+	</div>
+
+	
 	<div class="pricing">
 	<section class="section">
 		<span id="pricingBlock">
@@ -102,7 +109,7 @@
 	</section>
 	<section class="section">
 		<span id="pricingBlock">
-			<h3>Cycle</h3>
+			<h3>Motorcycle</h3>
 			<br>
 			<div class="textPurchaseMonthly"><strong>
 				<p>5Rs</p>
@@ -119,7 +126,7 @@
 	</section>
 	<section class="section">
 		<span id="pricingBlock">
-			<h3>Cycle</h3>
+			<h3>Four-Wheeler</h3>
 			<br>
 			<div class="textPurchaseMonthly"><strong>
 				<p>500Rs</p>
@@ -135,6 +142,7 @@
 		</span>
 	</section
 	</div>
+</main>
 </body>
 </html>
 				

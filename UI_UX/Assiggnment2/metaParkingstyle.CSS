@@ -26,17 +26,25 @@
 	text-align:center;
 }
 .container{
-	display:flex;
+display:flex;
 	flex-direction:column;
 	justify-content: center;
 	align-items:center;
+
+	padding: 8px;
+	margin: 4px;
+	
 }
 
 .section{
-	align-items: center;
-	justify-content: space-evenly;
-	padding: 8px;
+		display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items:center;
+	width:300px;
+	height:400px;
 	margin: 4px;
+	
 }
 .split_line{
 	margin-left:10px;
@@ -47,24 +55,23 @@
 }
 .pricing{
 	display: flex;
-	flex-direcction: column-reverse;
-	justify-content: center;
+
 	align-items:center;
 }
 #pricingBlock{
 	display:inline-block;
 	min-width: 20px;
 	align-items:center;
-	justify:content: space-evenly;
+	justify:content: center;
 	border: 2px solid #074481;
 	border-radius: 5px;
 	padding: 20px;
-	margin: 0px 16px;
+	margin: auto;
 	
 }
-.pricing h3{
+#textPurchaseMonthly{
 	border: 2px solid #074481;
-	border-radius: 100px;
+	border-radius: 50%;
 }
 input[type=text], input[type=email], input[type=password], input[type=tel],textarea{
 	width: 100%;
