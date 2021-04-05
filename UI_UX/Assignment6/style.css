@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+.ctrlbutton{
+	
+}
+
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+input.weak {
+  border-color:red;
+}
+input.ok {
+  border-color:orange;
+}
+input.strong {
+  border-color:green;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+
+.pbutton{
+			   padding:12px 20px;
+			   margin: 8px 0;
+			   background-color:lightblue;
+			   color:black;
+			 }
+.column{
+			    float:center;
+				text-align:center;
+				border :2px solid lightblue;
+				color:blue;
+			 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+	 <button type="button" class="collapsible">Employee Details</button>
+		<section id="addEmployee">
+		  <div class="tab"><h2>Register:</h2>Name:
+				<p><input class="input1" placeholder="Name..."  name="name" id="ename" onfocus="this.placeholder=''" onblur="this.placeholder='Name.'"></p>
+			</div>
+		   <div class="tab">Enter your Gender:
+				<p><select class="input1" name="gender" id="genderselect">
+							<option  value="male">Male</option>
+							<option  value="female">Female</option>
+							<option value="other">Other</option>
+					</select>
+				</p>
+			</div>
+			<div class="tab">Email:
+				<p><input class="input1" placeholder="Email.." name="email" id="email"onfocus="this.placeholder=''" onblur="this.placeholder='Email'"></p>
+			</div>
+			<div class="tab">Password:
+				<p><input class="input1"   placeholder="Password..."  name="password" type="password" id="password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'"></p>
+				<button style="display:none" onclick=validateForm() id="validate">validate</button>
+			</div>
+			<div class="tab">Confirm Password:
+				 <p><input class="input1" placeholder="Confirm Password..."  name="cpassword" type="password" id="password" onfocus="this.placeholder=''" onblur="this.placeholder='Confirm Password'"></p>
+			</div>
+			<div class="tab">Contact Number:
+				 <p><input class="input1" placeholder="Contact..."  name="contact" id="contact" onfocus="this.placeholder=''" onblur="this.placeholder='Contact'"></p>
+			</div>
+    </section>
+
+	   <!-- Employee form ends here -->
+		<div="tab">
+			<p id="employeeid"></p>
+		</div>
+
+	   <br>
+	   <!--Vehicle form starts here -->
+	   
+	<button type="button"  class="collapsible">Vehicle Details</button>
+		<section id="addVehicle">
+		  <div class="tab"><h2>Vehicle Information</h2>Vehicle Company:
+			 <p><input  class="input1" placeholder="Vehicle Company"  id="vcompany" onfocus="this.placeholder=''" onblur="this.placeholder='Vehicle Company'"></p>
+		  </div>
+		  <div class="tab">Vehicle Model:
+			<p><input  class="input1" placeholder="Vehicle Model..." id="vmodel" onfocus="this.placeholder=''" onblur="this.placeholder='Vehicle Model'"></p>
+		  </div>
+		  <div class="tab">Vehicle Type:
+			<p><select name="type"  id="type" class="input1">
+					<option value="cycle">Cycle</option>
+					<option value="motorcycle">Motor Cycle</option>
+					<option value="fourwheeler">Four-Wheeler</option>
+				</select>
+			</p>
+		  </div>
+		  <div class="tab">Vehicle Number:
+			<p><input placeholder="Vehicle Number.." class="input1" id="vnum" onfocus="this.placeholder=''" onblur="this.placeholder='Vehicle Number'"></p>
+		  </div>
+		  <div class="tab">Employee Id:
+			<p><input placeholder="Employee Id..." class="input1" id="eid" onfocus="this.placeholder=''" onblur="this.placeholder='Employee Id'" ></p>
+		  </div>
+		  <div class="tab">Identification:
+			<p><textarea  placeholder="Identification..."  class="input1" name="identification" rows="4" cols="50" onfocus="this.placeholder=''" onblur="this.placeholder='Identification'"></textarea></p>
+		  </div>
+		  
+	   </section>
+	   
+	   <div class="tab">
+		<div id="pricetab">
+		<button onclick="pricing()">Pricing</button>
+		</div>
+	  </div>
+	  <div class="tab">
+		<div id="getpass" class="pbutton">
+		<button onclick="price()">Total</button>
+		</div>
+	  </div>
+	  <div class="tab">
+		  <section id="congratulations"></section>
+	  </div>
+	   <div style="overflow:auto;">
+		 <div style="float:right;">
+			<button type="button" class="ctrlbutton" id="nextBtn"  onclick="nextPrev(1)">Next</button>
+		 </div>
+	   </div>
+
+
+    
+    <script src=".\script.js"></script>
+</body>
+</html>

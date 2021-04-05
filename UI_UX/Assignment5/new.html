@@ -13,6 +13,7 @@
     
     <script src="bootstrap/js/custom.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="height: 100%;">
     <div class="container-fluid px-0">
@@ -21,88 +22,88 @@
                 <div style="font-weight: bold; font-size: large;" class="w-100 my-4 d-flex justify-content-center" >ANNEX</div>
                 <div style="overflow-y: scroll; height: 89vh ;" class="pl-2" >
                     <div class="ml-3" style="color: gray;">Main</div> 
-                    <div class="ml-4 py-3 pr-3 d-flex">Dashboard <span class="ml-auto" style="border-radius: 4px; padding : 0px 4px; color: white; background-color: blue; " >8</span></div>
+                    <div class="ml-4 py-3 pr-3 d-flex" id="dashboard" onclick="background()" onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'"><i class="fa fa-columns" style="margin-top:4px; margin-right:2px;"></i>Dashboard <span class="ml-auto" style="border-radius: 4px; padding : 0px 4px; color: white; background-color: blue; " >8</span></div>
                     
-                    <div onclick="myFunction()" class="ml-4 py-3 pr-3 d-flex ">Advanced UI <span class="ml-auto">></span> </div>
+                    <div  class="ml-4 py-3 pr-3 d-flex " onclick="myFunction()"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'"><i class="fab fa-uikit" style="margin-top:4px; margin-right:2px;"></i>Advanced UI <span class="ml-auto">></span> </div>
                     
-                    <div id="myDIV" >
-                        <div class="ml-5 py-3 pr-3 d-flex ">Highlight </div>
-                        <div class="ml-5 py-3 pr-3 d-flex">Rating</div>     
-                        <div class="ml-5 py-3 pr-3 d-flex">Alertify </div>
-                        <div class="ml-5 py-3 pr-3 d-flex">Range Slider</div>   
+                    <div id="myDIV" style="display:none;">
+                        <div class="ml-5 py-3 pr-3 d-flex" onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Highlight </div>
+                        <div class="ml-5 py-3 pr-3 d-flex" onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Rating</div>     
+                        <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Alertify </div>
+                        <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Range Slider</div>   
                     </div>
-                    <div class="ml-4 py-3 pr-3 d-flex ">Calender</div>
+                    <div class="ml-4 py-3 pr-3 d-flex " id="calendar" onclick="calendar()"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'"><i class="far fa-calendar-minus"></i>Calender</div>
 
-                    <div class="ml-3 py-3" style="color: gray;">Components</div> 
-                    <div onclick="myFunction1()" class="ml-4 py-3 pr-3 d-flex">UI Elements <span class="ml-auto">></span></div>
-					    <div id="myDIV1" >
-                           <div class="ml-5 py-3 pr-3 d-flex ">Buttons </div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Cards</div>     
-                           <div class="ml-5 py-3 pr-3 d-flex">Tabs &amp; Accordions</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Modals</div>  
-                           <div class="ml-5 py-3 pr-3 d-flex">Images</div>  
-                           <div class="ml-5 py-3 pr-3 d-flex">Alerts</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Progress Bar</div>  
-                           <div class="ml-5 py-3 pr-3 d-flex">Lightbox</div> 
-                           <div class="ml-5 py-3 pr-3 d-flex">Nav</div> 
-                           <div class="ml-5 py-3 pr-3 d-flex">Pagination</div> 
-                           <div class="ml-5 py-3 pr-3 d-flex">Popups &amp; Tooltips</div> 
-                           <div class="ml-5 py-3 pr-3 d-flex">Badge</div> 
-                           <div class="ml-5 py-3 pr-3 d-flex">Carousel</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Video</div> 
-                           <div class="ml-5 py-3 pr-3 d-flex">Typography</div> 
-                           <div class="ml-5 py-3 pr-3 d-flex">Sweet-Alert</div> 
-                           <div class="ml-5 py-3 pr-3 d-flex">Grid</div> 						   
+                    <div class="ml-3 py-3" style="color: gray;" >Components</div> 
+                    <div onclick="myFunction1()" class="ml-4 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">UI Elements <span class="ml-auto">></span></div>
+					    <div id="myDIV1" style="display:none;" >
+                           <div class="ml-5 py-3 pr-3 d-flex "onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Buttons </div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Cards</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Tabs &amp; Accordions</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Modals</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Images</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Alerts</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Progress Bar</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Lightbox</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Nav</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Pagination</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Popups &amp; Tooltips</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Badge</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Carousel</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Video</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Typography</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Sweet-Alert</div> 
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Grid</div> 						   
                       </div>
-                    <div onclick="myFunction2()" class="ml-4 py-3 pr-3 d-flex">Forms <span class="ml-auto" style="border-radius: 4px; padding : 0px 4px; color: white; background-color: blue; " >8</span></div>      
-                     <div id="myDIV2" >
-                           <div class="ml-5 py-3 pr-3 d-flex ">Form Elements </div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Form Validation</div>     
-                           <div class="ml-5 py-3 pr-3 d-flex">Form Advanced</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Form Editors</div>  
-                           <div class="ml-5 py-3 pr-3 d-flex">Form File Upload</div>  
-                           <div class="ml-5 py-3 pr-3 d-flex">Form Mask</div>
+                    <div onclick="myFunction2()" class="ml-4 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Forms <span class="ml-auto" style="border-radius: 4px; padding : 0px 4px; color: white; background-color: blue; " >8</span></div>      
+                     <div id="myDIV2" style="display:none;">
+                           <div class="ml-5 py-3 pr-3 d-flex "onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Form Elements </div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Form Validation</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Form Advanced</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Form Editors</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Form File Upload</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Form Mask</div>
 					  </div>
-					<div onclick="myFunction3()" class="ml-4 py-3 pr-3 d-flex">Charts <span class="ml-auto">></span></div> 
-					 <div id="myDIV3" >
-                           <div class="ml-5 py-3 pr-3 d-flex ">Morris Chart </div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Chartist Chart</div>     
-                           <div class="ml-5 py-3 pr-3 d-flex">Chartjs Chart</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Float Chart</div>  
-                           <div class="ml-5 py-3 pr-3 d-flex">C3 Chart</div>  
-                           <div class="ml-5 py-3 pr-3 d-flex">JQuery Knob Chart</div>
+					<div onclick="myFunction3()" class="ml-4 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Charts <span class="ml-auto">></span></div> 
+					 <div id="myDIV3" style="display:none;">
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Morris Chart </div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Chartist Chart</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Chartjs Chart</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Float Chart</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">C3 Chart</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">JQuery Knob Chart</div>
 					  </div>
-                    <div onclick="myFunction4()" class="ml-4 py-3 pr-3 d-flex">Icons <span class="ml-auto">></span></div> 
-                      <div id="myDIV4" >
-                           <div class="ml-5 py-3 pr-3 d-flex ">Material Design</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Ion Icon</div>     
-                           <div class="ml-5 py-3 pr-3 d-flex">Font Awesome</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Themify Icon</div>  
-                           <div class="ml-5 py-3 pr-3 d-flex">Dripicons</div>  
-                           <div class="ml-5 py-3 pr-3 d-flex">Typicons Icons</div>
+                    <div onclick="myFunction4()" class="ml-4 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Icons <span class="ml-auto">></span></div> 
+                      <div id="myDIV4" style="display:none;">
+                           <div class="ml-5 py-3 pr-3 d-flex" onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Material Design</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Ion Icon</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Font Awesome</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Themify Icon</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Dripicons</div>  
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Typicons Icons</div>
 					  </div>					
-                    <div onclick="myFunction5()" class="ml-4 py-3 pr-3 d-flex">Tables <span class="ml-auto">></span></div> 
-					<div id="myDIV5" >
-                           <div class="ml-5 py-3 pr-3 d-flex ">Basic Table</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Data Table</div>     
-                           <div class="ml-5 py-3 pr-3 d-flex">Responsive Table</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Editable Table</div> 
+                    <div onclick="myFunction5()" class="ml-4 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Tables <span class="ml-auto">></span></div> 
+					<div id="myDIV5" style="display:none;">
+                           <div class="ml-5 py-3 pr-3 d-flex "onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Basic Table</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Data Table</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Responsive Table</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Editable Table</div> 
 					  </div>
                     <div class="ml-3 py-3" style="color: gray;">Extra</div> 
-                    <div onclick="myFunction6()" class="ml-4 py-3 pr-3 d-flex">Maps<span class="ml-auto" style="border-radius: 4px; padding : 0px 4px; color: white; background-color: red;" >2</span></div>
-                       <div id="myDIV6" >
-                           <div class="ml-5 py-3 pr-3 d-flex ">Google Map</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Vector Map</div>     
+                    <div onclick="myFunction6()" class="ml-4 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Maps<span class="ml-auto" style="border-radius: 4px; padding : 0px 4px; color: white; background-color: red;" >2</span></div>
+                       <div id="myDIV6" style="display:none;">
+                           <div class="ml-5 py-3 pr-3 d-flex "onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Google Map</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Vector Map</div>     
 					  </div>
-					<div onclick="myFunction7()" class="ml-4 py-3 pr-3 d-flex">Pages <span class="ml-auto">></span></div> 
-                     <div id="myDIV7" >
-                           <div class="ml-5 py-3 pr-3 d-flex ">Login</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Register</div>     
-                           <div class="ml-5 py-3 pr-3 d-flex">Recover Password</div>
-                           <div class="ml-5 py-3 pr-3 d-flex">Lock Screen</div> 
-						   <div class="ml-5 py-3 pr-3 d-flex">Blank Page</div> 
-						   <div class="ml-5 py-3 pr-3 d-flex">Error 404</div> 
-						   <div class="ml-5 py-3 pr-3 d-flex">Error 500</div> 
+					<div onclick="myFunction7()" class="ml-4 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Pages <span class="ml-auto">></span></div> 
+                     <div id="myDIV7" style="display:none;">
+                           <div class="ml-5 py-3 pr-3 d-flex "onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Login</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Register</div>     
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Recover Password</div>
+                           <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Lock Screen</div> 
+						   <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Blank Page</div> 
+						   <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Error 404</div> 
+						   <div class="ml-5 py-3 pr-3 d-flex"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">Error 500</div> 
 					  </div>					
                 </div>   
             </div>
@@ -117,26 +118,26 @@
                         padding-right: 40px;
                         background: #6d7beb;
                         border-radius: 30px;
-                        width: 200px;" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        width: 200px;" class="form-control mr-sm-2" type="search" placeholder="Search" onfocus="this.placeholder=''" onblur="this.placeholder='Search'" aria-label="Search">
                         <button style="border : 2px solid white; color: white; border-radius: 4px;" class="btn  my-2 my-sm-0" type="submit">Search</button>
                     </form>
                     <div class="ml-auto" style="color: white;">
                        
 
-                       <span class="dropdown">
-                        <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="dropdown"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-2">English</span> 
                             <span class="mr-2">USA</span> 
                         </a>
                       
-                        <span class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <span class="dropdown-menu" aria-labelledby="dropdownMenuLink"onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">
                           <a class="dropdown-item" href="#">French</a>
                           <a class="dropdown-item" href="#">Spanish</a>
                           <a class="dropdown-item" href="#">Russian</a>
                         </span>
                       </div>
                       <span>
-					    <div class="dropdown show">
+					    <div class="dropdown show" onmouseover="this.style.color='#000FFF'" onmouseout="this.style.color='#000'">
                          <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Messages
                          </a>
@@ -197,7 +198,7 @@
 					  </span>
                       <span>
 					    <div class="dropdown show">
-                         <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-color:white; border-radius:50%;">
                           AC
                          </a>
 						 <div class="dropdown-menu dropdown-menu-right profile-dropdown">

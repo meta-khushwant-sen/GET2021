@@ -1,6 +1,18 @@
+function background(){
+	var x=document.getElementById("dashboard");
+	var y=document.getElementById("calendar");
+	x.style.backgroundColor="#e8f4f8";
+	y.style.backgroundColor="white";
+}
+function calendar(){
+	var x=document.getElementById("calendar");
+	var y=document.getElementById("dashboard");
+	x.style.backgroundColor="#e8f4f8";
+	y.style.backgroundColor="white";
+}
 function myFunction() {
                 var x = document.getElementById("myDIV");
-                if (x.style.display === "none") {
+                if (x.style.display == "none") {
                     x.style.display = "block";
                 } else {
                     x.style.display = "none";
@@ -8,7 +20,7 @@ function myFunction() {
             }
 function myFunction1() {
                 var x = document.getElementById("myDIV1");
-                if (x.style.display === "none") {
+                if (x.style.display == "none") {
                     x.style.display = "block";
                 } else {
                     x.style.display = "none";
@@ -16,7 +28,7 @@ function myFunction1() {
             }
 function myFunction2() {
                 var x = document.getElementById("myDIV2");
-                if (x.style.display === "none") {
+                if (x.style.display == "none") {
                     x.style.display = "block";
                 } else {
                     x.style.display = "none";
@@ -24,7 +36,7 @@ function myFunction2() {
             }
 function myFunction3() {
                 var x = document.getElementById("myDIV3");
-                if (x.style.display === "none") {
+                if (x.style.display =="none") {
                     x.style.display = "block";
                 } else {
                     x.style.display = "none";
@@ -32,7 +44,7 @@ function myFunction3() {
             }
 function myFunction4() {
                 var x = document.getElementById("myDIV4");
-                if (x.style.display === "none") {
+                if (x.style.display == "none") {
                     x.style.display = "block";
                 } else {
                     x.style.display = "none";
@@ -40,7 +52,7 @@ function myFunction4() {
             }
 function myFunction5() {
                 var x = document.getElementById("myDIV5");
-                if (x.style.display === "none") {
+                if (x.style.display == "none") {
                     x.style.display = "block";
                 } else {
                     x.style.display = "none";
@@ -48,7 +60,7 @@ function myFunction5() {
             }
 function myFunction6() {
                 var x = document.getElementById("myDIV6");
-                if (x.style.display === "none") {
+                if (x.style.display == "none") {
                     x.style.display = "block";
                 } else {
                     x.style.display = "none";
@@ -56,7 +68,7 @@ function myFunction6() {
             }
 function myFunction7() {
                 var x = document.getElementById("myDIV7");
-                if (x.style.display === "none") {
+                if (x.style.display =="none") {
                     x.style.display = "block";
                 } else {
                     x.style.display = "none";

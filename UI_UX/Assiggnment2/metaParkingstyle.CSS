@@ -37,7 +37,7 @@ display:flex;
 }
 
 .section{
-		display:flex;
+	display:flex;
 	flex-direction:column;
 	justify-content: center;
 	align-items:center;
@@ -55,21 +55,25 @@ display:flex;
 }
 .pricing{
 	display: flex;
-
 	align-items:center;
+	justify-content:center;
 }
 #pricingBlock{
+	align-items:center;
+	text-align:center;
 	display:inline-block;
 	min-width: 20px;
-	align-items:center;
-	justify:content: center;
+	justify-content: center;
 	border: 2px solid #074481;
 	border-radius: 5px;
 	padding: 20px;
 	margin: auto;
 	
 }
-#textPurchaseMonthly{
+.textPurchaseMonthly{
+	width:100px;
+	align-items:center;
+	justify-content:center;
 	border: 2px solid #074481;
 	border-radius: 50%;
 }

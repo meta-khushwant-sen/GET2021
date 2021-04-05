@@ -1,5 +1,7 @@
 .background2{
-		background-image: url("D:\Assignments\UI_UX\Assignment3\images\homebg.png");
+		background-image: url("\images\\homebg2.png");
+		background-size:cover;
+		height:700px;
 }
 .topnav{
 	overflow:hidden;
@@ -26,6 +28,7 @@
 	text-align:center;
 	color:black;
 	
+	
 }
 .row:after{
 	clear:both;
@@ -47,6 +50,7 @@
 	text-align: center;
 	color:black;
 	height:100%;
+	
 }
 p{
 	text-align:center;
